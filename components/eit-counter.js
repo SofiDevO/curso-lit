@@ -26,10 +26,14 @@ export class EitCounter extends LitElement {
       <h2>Contador</h2>
       <span>${this.counter}</span>
       <button @click=${this.increment}>Aumentar</button>
+      <button @click=${this.decrement}>Disminuir</button>
     `;
   }
   increment() {
     this.counter++;
+  }
+  decrement() {
+    this.counter--;
   }
 }
 customElements.define("eit-counter", EitCounter);
